@@ -35,9 +35,9 @@
 			padding-bottom: 4rem;
 		}
 
-		.about-mf .about-img {
+		/* .about-mf .about-img {
 			margin-bottom: 2rem;
-		}
+		} */
 
 		.about-mf .about-img img {
 			margin-left: 10px;
@@ -100,6 +100,13 @@
 		}
 
 
+		@media(max-width:667px)
+		{
+			body {
+				overflow-x: hidden;
+		    }
+		}
+
 		/* project image zoom effect */
 
 		.zoom-effect {
@@ -146,13 +153,14 @@
 			<div class="slider-item ">
 				<div class="overlay"></div>
 				<div class="container">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+					<div class="row d-md-flex slider-text align-items-center justify-content-center"
 						data-scrollax-parent="true">
-						<div class="one-third js-fullheight order-md-last img"
+						<!-- <div class="one-third js-fullheight order-md-last img"
 							style="background-image:url(images/bg_1.png);">
 							<div class="overlay"></div>
-						</div>
-						<div class="one-forth d-flex  align-items-center ftco-animate"
+						</div> -->
+						<div class="col-md-9">
+							<div class="ftco-animate"
 							data-scrollax=" properties: { translateY: '70%' }">
 							<div class="text">
 								<span class="subheading">Hello!</span>
@@ -197,15 +205,16 @@
 
 								<br>
 								<br>
-								<h2>Full Stack Developer</h2>
-								<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-								<!-- <br> -->
+								<h2>Full Stack Developer</h2> 
+								<h2 class="d-flex" style="margin-bottom: 0">With over 2 years of experience</h2>
+								<br>
 								<p><a href="https://www.linkedin.com/in/abhishek-lokhande-6b1455282/"
 										class="btn btn-primary py-3 px-4">LinkedIn</a>
 									<a href="https://github.com/abhilokhande0905"
-										class="btn btn-white btn-outline-white py-3 px-4">My works</a>
+										class="btn btn-white btn-outline-white py-3 px-4 ml-4">My works</a>
 								</p>
 							</div>
+						</div>
 						</div>
 					</div>
 				</div>
@@ -213,9 +222,11 @@
 		</div>
 	</section>
 
+     <div>
+		<hr style="color: white;">
+	 </div>
 
-
-	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section" style="margin-top: -5%;">
 		<div class="container">
 			<div class="row">
 				<div class="row d-flex align-items-stretch">
@@ -226,7 +237,7 @@
 								<div class="row">
 									<div class="col-sm-6 col-md-5">
 										<div class="about-img">
-											<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+											<img src="images/abhi.png" class="img-fluid rounded b-shadow-a" alt="">
 										</div>
 									</div>
 									<!-- Details next to profile image -->
@@ -361,7 +372,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="resume-wrap ftco-animate">
-						<span class="date">2023-2024</span>
+						<span class="date">2022-2024</span>
 						<h2>Full Stack Developer</h2>
 						<span class="position">A2Z IT HUB</span>
 						<p class="mt-4">A2Z IT HUB Software Solutions for Businesses Of All Sizes. Specializing in
