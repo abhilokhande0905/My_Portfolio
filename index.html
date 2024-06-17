@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Abhi Lokhande Portfolio</title>
+	<title>My Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -26,10 +26,11 @@
 
 
 	<style>
-		/*======================================
-//--//-->   ABOUT
-======================================*/
-
+		@media(max-width:667px){
+			body{
+				padding: 15px;
+			}
+		}
 		.about-mf .box-shadow-full {
 			padding-top: 4rem;
 			padding-bottom: 4rem;
@@ -100,11 +101,10 @@
 		}
 
 
-		@media(max-width:667px)
-		{
+		@media(max-width:667px) {
 			body {
 				overflow-x: hidden;
-		    }
+			}
 		}
 
 		/* project image zoom effect */
@@ -160,61 +160,60 @@
 							<div class="overlay"></div>
 						</div> -->
 						<div class="col-md-9">
-							<div class="ftco-animate"
-							data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">Hello!</span>
-								<h1 class="mb-4 mt-3">I'm <span>Abhi Lokhande</span></h1>
+							<div class="ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+								<div class="text">
+									<span class="subheading">Hello!</span>
+									<h1 class="mb-4 mt-3">I'm <span>Abhi Lokhande</span></h1>
 
-								<!-- Element to contain animated typing -->
-								<span id="typing-animation"></span>
+									<!-- Element to contain animated typing -->
+									<span id="typing-animation"></span>
 
-								<script>
+									<script>
 
-									// Initialize the typing animation
-									const typingAnimationElement = document.getElementById('typing-animation');
+										// Initialize the typing animation
+										const typingAnimationElement = document.getElementById('typing-animation');
 
-									// Create an array of typing text
-									const typingTexts = [
-										'Front-end Developer  ',
-										'Back-end Developer  ',
-										'Database Developer   ',
-										'Full Stack Developer  ',
-									];
+										// Create an array of typing text
+										const typingTexts = [
+											'Front-end Developer  ',
+											'Back-end Developer  ',
+											'Database Developer   ',
+											'Full Stack Developer  ',
+										];
 
-									// Create a function to display the typing animation for a given text
-									function playTypingAnimation(text) {
-										// Loop through each character and add it to the element
-										for (let i = 0; i < text.length; i++) {
+										// Create a function to display the typing animation for a given text
+										function playTypingAnimation(text) {
+											// Loop through each character and add it to the element
+											for (let i = 0; i < text.length; i++) {
+												setTimeout(() => {
+													typingAnimationElement.textContent += text[i];
+												}, i * 180); // Increase the delay to slow down the typing animation
+											}
+
+											// Once the animation is complete, reset the text and start over
 											setTimeout(() => {
-												typingAnimationElement.textContent += text[i];
-											}, i * 180); // Increase the delay to slow down the typing animation
+												typingAnimationElement.textContent = '';
+												playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+											}, text.length * 180);
 										}
 
-										// Once the animation is complete, reset the text and start over
-										setTimeout(() => {
-											typingAnimationElement.textContent = '';
-											playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-										}, text.length * 180);
-									}
+										// Start the typing animation loop
+										playTypingAnimation(typingTexts[0]);
 
-									// Start the typing animation loop
-									playTypingAnimation(typingTexts[0]);
+									</script>
 
-								</script>
-
-								<br>
-								<br>
-								<h2>Full Stack Developer</h2> 
-								<h2 class="d-flex" style="margin-bottom: 0">With over 2 years of experience</h2>
-								<br>
-								<p><a href="https://www.linkedin.com/in/abhishek-lokhande-6b1455282/"
-										class="btn btn-primary py-3 px-4">LinkedIn</a>
-									<a href="https://github.com/abhilokhande0905"
-										class="btn btn-white btn-outline-white py-3 px-4 ml-4">My works</a>
-								</p>
+									<br>
+									<br>
+									<h2>Full Stack Developer</h2>
+									<h2 class="d-flex" style="margin-bottom: 0">With over 2 years of experience</h2>
+									<br>
+									<p><a href="https://www.linkedin.com/in/abhishek-lokhande-6b1455282/"
+											class="btn btn-primary py-3 px-4">LinkedIn</a>
+										<a href="https://github.com/abhilokhande0905"
+											class="btn btn-white btn-outline-white py-3 px-4 ml-4">My works</a>
+									</p>
+								</div>
 							</div>
-						</div>
 						</div>
 					</div>
 				</div>
@@ -222,9 +221,9 @@
 		</div>
 	</section>
 
-     <div>
+	<div>
 		<hr style="color: white;">
-	 </div>
+	</div>
 
 	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section" style="margin-top: -5%;">
 		<div class="container">
